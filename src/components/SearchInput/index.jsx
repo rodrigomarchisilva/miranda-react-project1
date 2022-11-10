@@ -1,20 +1,23 @@
 import { Component } from 'react';
 import P from 'prop-types';
+import './style.css';
 
-export class Input extends Component {
+export class SearchInput extends Component {
   render() {
     const { value, onChange } = this.props;
     return (
       <input
-        type="text"
+        className="search-input"
+        type="search"
         value={ value }
         onChange={ onChange }
+        placeholder="Type your search"
       />
     );
   }
 }
 
-Input.propTypes = {
+SearchInput.propTypes = {
   value: P.string.isRequired,
   onChange: P.func.isRequired,
 };
