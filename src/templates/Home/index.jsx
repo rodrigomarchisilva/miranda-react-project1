@@ -53,7 +53,7 @@ export class Home extends Component {
     if (!posts) { return <div>Loading...</div>; }
 
     return (
-      <section className="container">
+      <section className="container" data-testid="container">
         { searchValue && <h1>Search value: { searchValue }</h1> }
         <SearchInput value={ searchValue } onChange={ handleSearch } />
         {
