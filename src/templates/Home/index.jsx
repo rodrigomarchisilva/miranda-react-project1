@@ -3,7 +3,7 @@ import { Component } from 'react';
 import { Posts } from '../../components/Posts';
 import { fetchPosts } from '../../utils/fetchPosts';
 import { Button } from '../../components/Button';
-import { Input } from '../../components/Input';
+import { SearchInput } from '../../components/SearchInput';
 
 export class Home extends Component {
   state = {
@@ -40,26 +40,36 @@ export class Home extends Component {
     this.setState({ searchValue: value });
   }
 
+  filterPosts = (post) => (
+    post.title.toLowerCase().includes(this.state.searchValue.toLowerCase())
+  );
+
   render() {
     const { posts, page, postsPerPage, allPosts, searchValue } = this.state;
+    const { addPosts, handleSearch, filterPosts } = this;
     const noMorePosts = page + postsPerPage >= allPosts.length;
+    const filteredPosts = searchValue ? allPosts.filter(filterPosts) : posts;
 
     if (!posts) { return <div>Loading...</div>; }
 
     return (
       <section className="container">
-        <Input
-          value={ searchValue }
-          onChange={ this.handleSearch }
-        />
-        <Posts posts={ posts } />
-        <div className="button-container">
-          <Button
-            text="Show more posts"
-            onClick={ this.addPosts }
-            disabled={ noMorePosts }
-          />
-        </div>
+        { searchValue && <h1>Search value: { searchValue }</h1> }
+        <SearchInput value={ searchValue } onChange={ handleSearch } />
+        {
+          !filteredPosts.length
+            ? <div>{ 'No posts found =(' }</div>
+            : (
+              <>
+                <Posts posts={ filteredPosts } />
+                <Button
+                  text="Show more posts"
+                  onClick={ addPosts }
+                  disabled={ noMorePosts }
+                />
+              </>
+            )
+        }
       </section>
     );
   }
