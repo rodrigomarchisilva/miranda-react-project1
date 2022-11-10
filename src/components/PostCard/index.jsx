@@ -1,4 +1,5 @@
 import P from 'prop-types';
+import './style.css';
 
 export const PostCard = ({ cover, title, body }) => (
   <div className="post">
