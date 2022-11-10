@@ -3,6 +3,7 @@ import { Component } from 'react';
 import { Posts } from '../../components/Posts';
 import { fetchPosts } from '../../utils/fetchPosts';
 import { Button } from '../../components/Button';
+import { Input } from '../../components/Input';
 
 export class Home extends Component {
   state = {
@@ -10,6 +11,7 @@ export class Home extends Component {
     allPosts: [],
     page: 0,
     postsPerPage: 3,
+    searchValue: '',
   };
 
   async componentDidMount() {
@@ -33,14 +35,23 @@ export class Home extends Component {
     this.setState({ posts, page: nextPage });
   }
 
+  handleSearch = (e) => {
+    const { value } = e.target;
+    this.setState({ searchValue: value });
+  }
+
   render() {
-    const { posts, page, postsPerPage, allPosts } = this.state;
+    const { posts, page, postsPerPage, allPosts, searchValue } = this.state;
     const noMorePosts = page + postsPerPage >= allPosts.length;
 
     if (!posts) { return <div>Loading...</div>; }
 
     return (
       <section className="container">
+        <Input
+          value={ searchValue }
+          onChange={ this.handleSearch }
+        />
         <Posts posts={ posts } />
         <div className="button-container">
           <Button
