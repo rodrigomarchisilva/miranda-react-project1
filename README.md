@@ -1,70 +1,287 @@
-# Getting Started with Create React App
+<!-- markdownlint-disable MD004 MD007 MD048 MD033-->
+# :atom_symbol: Miranda React Project 1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## :open_book: Content (conteúdo)
 
-## Available Scripts
+- [:atom_symbol: Miranda React Project 1](#atom_symbol-miranda-react-project-1)
+  - [:open_book: Content (conteúdo)](#open_book-content-conteúdo)
+  - [:us: English](#us-english)
+    - [:desktop_computer: Deploy link](#desktop_computer-deploy-link)
+    - [:deciduous_tree: Development environment](#deciduous_tree-development-environment)
+    - [:information_source: Project info](#information_source-project-info)
+    - [:printer: Cloning the project and opening it on VSCode](#printer-cloning-the-project-and-opening-it-on-vscode)
+    - [:computer: How to run it locally](#computer-how-to-run-it-locally)
+    - [:whale2: How to run it through docker](#whale2-how-to-run-it-through-docker)
+    - [:whale: How to run it through docker-compose](#whale-how-to-run-it-through-docker-compose)
+    - [:house: Home page](#house-home-page)
+    - [:iphone: Responsiveness](#iphone-responsiveness)
+  - [:brazil: Português](#brazil-português)
+    - [:desktop_computer: Link do deploy](#desktop_computer-link-do-deploy)
+    - [:deciduous_tree: Ambiente de desenvolvimento](#deciduous_tree-ambiente-de-desenvolvimento)
+    - [:information_source: Informações do projeto](#information_source-informações-do-projeto)
+    - [:printer: Clonando o projeto e abrindo no VSCode](#printer-clonando-o-projeto-e-abrindo-no-vscode)
+    - [:computer: Como rodar localmente](#computer-como-rodar-localmente)
+    - [:whale2: Como rodar através do docker](#whale2-como-rodar-através-do-docker)
+    - [:whale: Como rodar através do docker-compose](#whale-como-rodar-através-do-docker-compose)
+    - [:house: Página inicial](#house-página-inicial)
+    - [:iphone: Responsividade](#iphone-responsividade)
 
-In the project directory, you can run:
+## :us: English
 
-### `npm start`
+### :desktop_computer: Deploy link
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[https://miranda-react-project1.netlify.app/](https://miranda-react-project1.netlify.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### :deciduous_tree: Development environment
 
-### `npm test`
+| Tool | Version |
+| ----------- | ------- |
+| [Node](https://nodejs.org/en/) | 18.12.1 |
+| [Docker](https://www.docker.com/) | 20.10.20 |
+| [Docker Compose](https://docs.docker.com/compose/) | 2.12.0 |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### :information_source: Project info
 
-### `npm run build`
+* **Why I did this project:** It was part of the React section of Luiz Otávio Miranda's course about React and Next.js;
+* **Core Technologies:** React (w/ mainly class components, but also functional components mixed for learning purposes) and CSS;
+* **Secondary Technologies:** create-react-app and Docker (w/ compose);
+* **Description:** This project has a single page (home) where an API call is made (JSON Placeholder) to return posts with photos. There is also an input where the user can filter the posts by their title.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### :printer: Cloning the project and opening it on VSCode
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  **Prerequisites:** You need to have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/) installed on your computer;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  **1.** Clone the repository:
 
-### `npm run eject`
+  ~~~bash
+    git clone git@github.com:rodrigomarchisilva/miranda-react-project1.git
+  ~~~
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  **2.** Open the project:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  ~~~bash
+    cd miranda-react-project1
+  ~~~
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  **3.** Make sure you have VSCode installed and running:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  ```bash
+    code -v
+  ```
 
-## Learn More
+  **4.** If not, download and install it:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  * [Download VSCode](https://code.visualstudio.com/download)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  **5.** Access it through VSCode:
 
-### Code Splitting
+  ~~~bash
+    code .
+  ~~~
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### :computer: How to run it locally
 
-### Analyzing the Bundle Size
+  **1.** Install the dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  ~~~bash
+    npm install
+  ~~~
 
-### Making a Progressive Web App
+  **2.** Run the app:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  ~~~bash
+    npm start
+  ~~~
 
-### Advanced Configuration
+### :whale2: How to run it through docker
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+  **1.** Make sure you have Docker installed and running:
 
-### Deployment
+  ~~~bash
+    docker -v
+  ~~~
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  **2.** If not, download and install it:
 
-### `npm run build` fails to minify
+  * [Download Docker](https://www.docker.com/products/docker-desktop)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  **3.** Build the image:
+
+  ~~~bash
+    docker build -t miranda-react-project1 .
+  ~~~
+
+  **4.** Run the container:
+
+  ~~~bash
+    docker run -v ${PWD}:/app -v /app/node_modules -p 3000:3000 --rm miranda-react-project1
+  ~~~
+
+### :whale: How to run it through docker-compose
+
+  **1.** Make sure you have Docker installed and running:
+
+  ~~~bash
+    docker -v
+  ~~~
+
+  **2.** If not, download and install it:
+
+  * [Download Docker](https://www.docker.com/products/docker-desktop)
+
+  **3.** Make sure you have Docker Compose installed and running:
+
+  ~~~bash
+    docker-compose -v
+  ~~~
+
+  **4.** If not, download and install it:
+
+  * [Download Docker Compose](https://docs.docker.com/compose/install/)
+
+  **5.** Run the container:
+
+  ~~~bash
+    npm run compose:up
+  ~~~
+
+  **6.** Stop the container:
+
+  ~~~bash
+    npm run compose:down
+  ~~~
+
+### :house: Home page
+
+![Home page](src/gifs/miranda-react-project1-home.gif)
+
+### :iphone: Responsiveness
+
+![Responsiveness](src/gifs/miranda-react-project1-responsiveness.gif)
+
+> The app is responsive across all resolutions.
+
+## :brazil: Português
+
+### :desktop_computer: Link do deploy
+
+[https://miranda-react-project1.netlify.app/](https://miranda-react-project1.netlify.app/)
+
+### :deciduous_tree: Ambiente de desenvolvimento
+
+| Ferramenta | Versão |
+| ----------- | ------- |
+| [Node](https://nodejs.org/en/) | 18.12.1 |
+| [Docker](https://www.docker.com/) | 20.10.20 |
+| [Docker Compose](https://docs.docker.com/compose/) | 2.12.0 |
+
+### :information_source: Informações do projeto
+
+* **Por que eu fiz esse projeto:** Foi parte da seção de React do curso de React e Next.js do Luiz Otávio Miranda;
+* **Tecnologias principais:** React (com componentes de classe, mas também componentes funcionais misturados para fins de aprendizado) e CSS;
+* **Tecnologias secundárias:** create-react-app e Docker (com compose);
+* **Descrição:** Esse projeto tem uma única página (home) onde é feita uma chamada à API (JSON Placeholder) para retornar posts com fotos. Também há um input onde o usuário pode filtrar os posts pelo título.
+
+### :printer: Clonando o projeto e abrindo no VSCode
+
+  **Pré-requisitos:** Você precisa ter o [Node.js](https://nodejs.org/en/) e o [Git](https://git-scm.com/) instalados no seu computador;
+
+  **1.** Clone o repositório:
+
+  ~~~bash
+    git clone git@github.com:rodrigomarchisilva/miranda-react-project1.git
+  ~~~
+
+  **2.** Abra o projeto:
+
+  ~~~bash
+    cd miranda-react-project1
+  ~~~
+
+  **3.** Certifique-se de ter o VSCode instalado e rodando:
+
+  ```bash
+    code -v
+  ```
+
+  **4.** Se não tiver, baixe e instale:
+
+  * [Download VSCode](https://code.visualstudio.com/download)
+
+  **5.** Acesse-o pelo VSCode:
+
+  ~~~bash
+    code .
+  ~~~
+
+### :computer: Como rodar localmente
+
+  **1.** Instale as dependências:
+
+  ~~~bash
+    npm install
+  ~~~
+
+  **2.** Rode o app:
+
+  ~~~bash
+    npm start
+  ~~~
+
+### :whale2: Como rodar através do docker
+
+  **1.** Certifique-se de ter o Docker instalado e rodando:
+
+  ~~~bash
+    docker -v
+  ~~~
+
+  **2.** Se não tiver, baixe e instale:
+
+  * [Download Docker](https://www.docker.com/products/docker-desktop)
+
+  **3.** Faça o build da imagem:
+
+  ~~~bash
+    docker build -t miranda-react-project1 .
+  ~~~
+
+  **4.** Rode o container:
+
+  ~~~bash
+    docker run -v ${PWD}:/app -v /app/node_modules -p 3000:3000 --rm miranda-react-project1
+  ~~~
+
+### :whale: Como rodar através do docker-compose
+
+  **1.** Certifique-se de ter o Docker Compose instalado e rodando:
+
+  ~~~bash
+    docker-compose -v
+  ~~~
+
+  **2.** Se não tiver, baixe e instale:
+
+  * [Download Docker Compose](https://docs.docker.com/compose/install/)
+
+  **3.** Rode o container:
+
+  ~~~bash
+    npm run compose:up
+  ~~~
+
+  **4.** Pare o container:
+
+  ~~~bash
+    npm run compose:down
+  ~~~
+
+### :house: Página inicial
+
+![Página inicial](src/gifs/miranda-react-project1-home.gif)
+
+### :iphone: Responsividade
+
+![Responsiveness](src/gifs/miranda-react-project1-responsiveness.gif)
+
+> A aplicação é responsiva, e se adapta a qualquer tamanho de tela.
