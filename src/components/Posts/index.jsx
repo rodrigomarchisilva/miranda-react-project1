@@ -1,19 +1,25 @@
+import { Component } from 'react';
 import P from 'prop-types';
 import { PostCard } from "../PostCard"
 import './style.css';
 
-export const Posts = ({ posts }) => (
-  <div className="posts">
-    { posts.map(({ id, title, body, cover }) => (
-      <PostCard
-        key={ id }
-        title={ title }
-        body={ body }
-        cover={ cover }
-      />
-    ))}
-  </div>
-);
+export class Posts extends Component {
+  render() {
+    const { posts } = this.props;
+    return (
+      <div className="posts">
+        { posts.map(({ id, title, body, cover }) => (
+          <PostCard
+            key={ id }
+            title={ title }
+            body={ body }
+            cover={ cover }
+          />
+        ))}
+      </div>
+    );
+  }
+}
 
 Posts.propTypes = {
   posts: P.arrayOf(
