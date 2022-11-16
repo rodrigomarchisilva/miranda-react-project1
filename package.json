@@ -17,7 +17,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "compose:up": "docker-compose up -d --build",
-    "compose:down": "docker-compose down --remove-orphans"
+    "compose:down": "docker-compose down --remove-orphans",
+    "coverage": "npm test -- --coverage"
   },
   "eslintConfig": {
     "extends": [
