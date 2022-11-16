@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { Home } from '.';
 
-describe('test the home page', () => {
+describe('<Home />', () => {
   it('renders the section with data-testid container', async () => {
     const { findByTestId } = render(<Home />);
     const sectionElement = await findByTestId('container');
