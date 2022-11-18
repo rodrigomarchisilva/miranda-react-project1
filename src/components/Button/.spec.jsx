@@ -6,7 +6,6 @@ describe('<Button />', () => {
   it('should render the button with the text "Load more posts"', () => {
     render(<Button text="Load more posts" disabled={ false } onClick={ () => {} } />);
 
-    // define number of assertions to make sure they are really happening
     expect.assertions(2);
 
     const button = screen.getByRole('button', { name: /Load more posts/i });
