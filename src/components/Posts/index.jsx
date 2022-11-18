@@ -5,7 +5,7 @@ import './style.css';
 
 export class Posts extends Component {
   render() {
-    const { posts } = this.props;
+    const posts = this.props.posts || [];
     return (
       <div className="posts">
         { posts.map(({ id, title, body, cover }) => (
