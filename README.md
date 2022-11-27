@@ -1,4 +1,5 @@
 <!-- markdownlint-disable MD004 MD007 MD048 MD033-->
+
 # :atom_symbol: Miranda React Project 1
 
 ## :open_book: Content (conteúdo)
@@ -34,122 +35,122 @@
 
 ### :deciduous_tree: Development environment
 
-| Tool | Version |
-| ----------- | ------- |
-| [Node](https://nodejs.org/en/) | 18.12.1 |
-| [Docker](https://www.docker.com/) | 20.10.20 |
-| [Docker Compose](https://docs.docker.com/compose/) | 2.12.0 |
+| Tool                                               | Version  |
+| -------------------------------------------------- | -------- |
+| [Node](https://nodejs.org/en/)                     | 18.12.1  |
+| [Docker](https://www.docker.com/)                  | 20.10.20 |
+| [Docker Compose](https://docs.docker.com/compose/) | 2.12.0   |
 
 ### :information_source: Project info
 
-* **Why I did this project:** It was part of the React section of Luiz Otávio Miranda's course about React and Next.js;
-* **Core Technologies:** React (w/ mainly class components, but also functional components mixed for learning purposes) and CSS;
-* **Secondary Technologies:** create-react-app and Docker (w/ compose);
-* **Description:** This project has a single page (home) where an API call is made (JSON Placeholder) to return posts with photos. There is also an input where the user can filter the posts by their title.
+- **Why I did this project:** It was part of the React section of Luiz Otávio Miranda's course about React and Next.js;
+- **Core Technologies:** React (w/ mainly class components, but also functional components mixed for learning purposes) and CSS;
+- **Secondary Technologies:** create-react-app and Docker (w/ compose);
+- **Description:** This project has a single page (home) where an API call is made (JSON Placeholder) to return posts with photos. There is also an input where the user can filter the posts by their title.
 
 ### :printer: Cloning the project and opening it on VSCode
 
-  **Prerequisites:** You need to have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/) installed on your computer;
+**Prerequisites:** You need to have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/) installed on your computer;
 
-  **1.** Clone the repository:
+**1.** Clone the repository:
 
-  ~~~bash
-    git clone git@github.com:rodrigomarchisilva/miranda-react-project1.git
-  ~~~
+```bash
+  git clone git@github.com:rodrigomarchisilva/miranda-react-project1.git
+```
 
-  **2.** Open the project:
+**2.** Open the project:
 
-  ~~~bash
-    cd miranda-react-project1
-  ~~~
+```bash
+  cd miranda-react-project1
+```
 
-  **3.** Make sure you have VSCode installed and running:
+**3.** Make sure you have VSCode installed and running:
 
-  ```bash
-    code -v
-  ```
+```bash
+  code -v
+```
 
-  **4.** If not, download and install it:
+**4.** If not, download and install it:
 
-  * [Download VSCode](https://code.visualstudio.com/download)
+- [Download VSCode](https://code.visualstudio.com/download)
 
-  **5.** Access it through VSCode:
+**5.** Access it through VSCode:
 
-  ~~~bash
-    code .
-  ~~~
+```bash
+  code .
+```
 
 ### :computer: How to run it locally
 
-  **1.** Install the dependencies:
+**1.** Install the dependencies:
 
-  ~~~bash
-    npm install
-  ~~~
+```bash
+  npm install
+```
 
-  **2.** Run the app:
+**2.** Run the app:
 
-  ~~~bash
-    npm start
-  ~~~
+```bash
+  npm start
+```
 
 ### :whale2: How to run it through docker
 
-  **1.** Make sure you have Docker installed and running:
+**1.** Make sure you have Docker installed and running:
 
-  ~~~bash
-    docker -v
-  ~~~
+```bash
+  docker -v
+```
 
-  **2.** If not, download and install it:
+**2.** If not, download and install it:
 
-  * [Download Docker](https://www.docker.com/products/docker-desktop)
+- [Download Docker](https://www.docker.com/products/docker-desktop)
 
-  **3.** Build the image:
+**3.** Build the image:
 
-  ~~~bash
-    docker build -t miranda-react-project1 .
-  ~~~
+```bash
+  docker build -t miranda-react-project1 .
+```
 
-  **4.** Run the container:
+**4.** Run the container:
 
-  ~~~bash
-    docker run -v ${PWD}:/app -v /app/node_modules -p 3000:3000 --rm miranda-react-project1
-  ~~~
+```bash
+  docker run -v ${PWD}:/app -v /app/node_modules -p 3000:3000 --rm miranda-react-project1
+```
 
 ### :whale: How to run it through docker-compose
 
-  **1.** Make sure you have Docker installed and running:
+**1.** Make sure you have Docker installed and running:
 
-  ~~~bash
-    docker -v
-  ~~~
+```bash
+  docker -v
+```
 
-  **2.** If not, download and install it:
+**2.** If not, download and install it:
 
-  * [Download Docker](https://www.docker.com/products/docker-desktop)
+- [Download Docker](https://www.docker.com/products/docker-desktop)
 
-  **3.** Make sure you have Docker Compose installed and running:
+**3.** Make sure you have Docker Compose installed and running:
 
-  ~~~bash
-    docker-compose -v
-  ~~~
+```bash
+  docker-compose -v
+```
 
-  **4.** If not, download and install it:
+**4.** If not, download and install it:
 
-  * [Download Docker Compose](https://docs.docker.com/compose/install/)
+- [Download Docker Compose](https://docs.docker.com/compose/install/)
 
-  **5.** Run the container:
+**5.** Run the container:
 
-  ~~~bash
-    npm run compose:up
-  ~~~
+```bash
+  npm run compose:up
+```
 
-  **6.** Stop the container:
+**6.** Stop the container:
 
-  ~~~bash
-    npm run compose:down
-  ~~~
+```bash
+  npm run compose:down
+```
 
 ### :house: Home page
 
@@ -169,112 +170,112 @@
 
 ### :deciduous_tree: Ambiente de desenvolvimento
 
-| Ferramenta | Versão |
-| ----------- | ------- |
-| [Node](https://nodejs.org/en/) | 18.12.1 |
-| [Docker](https://www.docker.com/) | 20.10.20 |
-| [Docker Compose](https://docs.docker.com/compose/) | 2.12.0 |
+| Ferramenta                                         | Versão   |
+| -------------------------------------------------- | -------- |
+| [Node](https://nodejs.org/en/)                     | 18.12.1  |
+| [Docker](https://www.docker.com/)                  | 20.10.20 |
+| [Docker Compose](https://docs.docker.com/compose/) | 2.12.0   |
 
 ### :information_source: Informações do projeto
 
-* **Por que eu fiz esse projeto:** Foi parte da seção de React do curso de React e Next.js do Luiz Otávio Miranda;
-* **Tecnologias principais:** React (com componentes de classe, mas também componentes funcionais misturados para fins de aprendizado) e CSS;
-* **Tecnologias secundárias:** create-react-app e Docker (com compose);
-* **Descrição:** Esse projeto tem uma única página (home) onde é feita uma chamada à API (JSON Placeholder) para retornar posts com fotos. Também há um input onde o usuário pode filtrar os posts pelo título.
+- **Por que eu fiz esse projeto:** Foi parte da seção de React do curso de React e Next.js do Luiz Otávio Miranda;
+- **Tecnologias principais:** React (com componentes de classe, mas também componentes funcionais misturados para fins de aprendizado) e CSS;
+- **Tecnologias secundárias:** create-react-app e Docker (com compose);
+- **Descrição:** Esse projeto tem uma única página (home) onde é feita uma chamada à API (JSON Placeholder) para retornar posts com fotos. Também há um input onde o usuário pode filtrar os posts pelo título.
 
 ### :printer: Clonando o projeto e abrindo no VSCode
 
-  **Pré-requisitos:** Você precisa ter o [Node.js](https://nodejs.org/en/) e o [Git](https://git-scm.com/) instalados no seu computador;
+**Pré-requisitos:** Você precisa ter o [Node.js](https://nodejs.org/en/) e o [Git](https://git-scm.com/) instalados no seu computador;
 
-  **1.** Clone o repositório:
+**1.** Clone o repositório:
 
-  ~~~bash
-    git clone git@github.com:rodrigomarchisilva/miranda-react-project1.git
-  ~~~
+```bash
+  git clone git@github.com:rodrigomarchisilva/miranda-react-project1.git
+```
 
-  **2.** Abra o projeto:
+**2.** Abra o projeto:
 
-  ~~~bash
-    cd miranda-react-project1
-  ~~~
+```bash
+  cd miranda-react-project1
+```
 
-  **3.** Certifique-se de ter o VSCode instalado e rodando:
+**3.** Certifique-se de ter o VSCode instalado e rodando:
 
-  ```bash
-    code -v
-  ```
+```bash
+  code -v
+```
 
-  **4.** Se não tiver, baixe e instale:
+**4.** Se não tiver, baixe e instale:
 
-  * [Download VSCode](https://code.visualstudio.com/download)
+- [Download VSCode](https://code.visualstudio.com/download)
 
-  **5.** Acesse-o pelo VSCode:
+**5.** Acesse-o pelo VSCode:
 
-  ~~~bash
-    code .
-  ~~~
+```bash
+  code .
+```
 
 ### :computer: Como rodar localmente
 
-  **1.** Instale as dependências:
+**1.** Instale as dependências:
 
-  ~~~bash
-    npm install
-  ~~~
+```bash
+  npm install
+```
 
-  **2.** Rode o app:
+**2.** Rode o app:
 
-  ~~~bash
-    npm start
-  ~~~
+```bash
+  npm start
+```
 
 ### :whale2: Como rodar através do docker
 
-  **1.** Certifique-se de ter o Docker instalado e rodando:
+**1.** Certifique-se de ter o Docker instalado e rodando:
 
-  ~~~bash
-    docker -v
-  ~~~
+```bash
+  docker -v
+```
 
-  **2.** Se não tiver, baixe e instale:
+**2.** Se não tiver, baixe e instale:
 
-  * [Download Docker](https://www.docker.com/products/docker-desktop)
+- [Download Docker](https://www.docker.com/products/docker-desktop)
 
-  **3.** Faça o build da imagem:
+**3.** Faça o build da imagem:
 
-  ~~~bash
-    docker build -t miranda-react-project1 .
-  ~~~
+```bash
+  docker build -t miranda-react-project1 .
+```
 
-  **4.** Rode o container:
+**4.** Rode o container:
 
-  ~~~bash
-    docker run -v ${PWD}:/app -v /app/node_modules -p 3000:3000 --rm miranda-react-project1
-  ~~~
+```bash
+  docker run -v ${PWD}:/app -v /app/node_modules -p 3000:3000 --rm miranda-react-project1
+```
 
 ### :whale: Como rodar através do docker-compose
 
-  **1.** Certifique-se de ter o Docker Compose instalado e rodando:
+**1.** Certifique-se de ter o Docker Compose instalado e rodando:
 
-  ~~~bash
-    docker-compose -v
-  ~~~
+```bash
+  docker-compose -v
+```
 
-  **2.** Se não tiver, baixe e instale:
+**2.** Se não tiver, baixe e instale:
 
-  * [Download Docker Compose](https://docs.docker.com/compose/install/)
+- [Download Docker Compose](https://docs.docker.com/compose/install/)
 
-  **3.** Rode o container:
+**3.** Rode o container:
 
-  ~~~bash
-    npm run compose:up
-  ~~~
+```bash
+  npm run compose:up
+```
 
-  **4.** Pare o container:
+**4.** Pare o container:
 
-  ~~~bash
-    npm run compose:down
-  ~~~
+```bash
+  npm run compose:down
+```
 
 ### :house: Página inicial
 

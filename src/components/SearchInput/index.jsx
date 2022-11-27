@@ -9,8 +9,8 @@ export class SearchInput extends Component {
       <input
         className="search-input"
         type="search"
-        value={ value }
-        onChange={ onChange }
+        value={value}
+        onChange={onChange}
         placeholder="Type your search"
       />
     );

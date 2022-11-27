@@ -8,6 +8,6 @@ services:
     ports:
       - '3000:3000'
     healthcheck:
-      test: ["CMD", "lsof", "-t", "-i:3000"]
+      test: ['CMD', 'lsof', '-t', '-i:3000']
       timeout: 10s
       retries: 5
