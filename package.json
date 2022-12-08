@@ -14,6 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "snap:reset": "jest -u",
     "test": "react-scripts test --detectOpenHandles --watchAll=false",
     "test:watch": "react-scripts test --detectOpenHandles",
     "coverage": "react-scripts test --detectOpenHandles --coverage --watchAll=false",
