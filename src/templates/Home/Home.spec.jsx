@@ -1,8 +1,17 @@
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
-import { render, screen, waitForElementToBeRemoved } from '@testing-library/react';
+import {
+  render,
+  screen,
+  waitForElementToBeRemoved,
+} from '@testing-library/react';
 import { Home } from '.';
-import { postsEndpoint, postsResponse, photosEndpoint, photosResponse } from './mock';
+import {
+  postsEndpoint,
+  postsResponse,
+  photosEndpoint,
+  photosResponse,
+} from './mock';
 
 const handlers = [
   rest.get(postsEndpoint, (_req, res, ctx) => res(ctx.json(postsResponse))),
