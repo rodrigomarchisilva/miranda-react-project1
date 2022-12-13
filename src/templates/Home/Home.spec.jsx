@@ -38,7 +38,19 @@ describe('<Home />', () => {
 
   it('should render search, posts and load more', async () => {
     render(<Home />);
+
+    expect.assertions(3);
+
     const noMorePosts = screen.getByText('No posts found =(');
     await waitForElementToBeRemoved(noMorePosts);
+
+    const search = screen.getByPlaceholderText(/type your search/i);
+    expect(search).toBeInTheDocument();
+
+    const images = screen.getAllByRole('img', { name: /title/i });
+    expect(images).toHaveLength(3);
+
+    const button = screen.getByRole('button', { name: /show more posts/i });
+    expect(button).toBeInTheDocument();
   });
 });
