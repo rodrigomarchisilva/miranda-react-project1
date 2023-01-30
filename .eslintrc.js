@@ -15,8 +15,11 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react'],
-  rules: {
-    "react/react-in-jsx-scope": ["error", { "version": "^18.2.0" }]
+  settings: {
+    react: {
+      version: 'detect'
+    },
   },
+  plugins: ['react'],
+  rules: {},
 };
