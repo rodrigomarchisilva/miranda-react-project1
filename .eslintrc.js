@@ -16,5 +16,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react'],
-  rules: {},
+  rules: {
+    "react/react-in-jsx-scope": ["error", { "version": "18.2.0" }]
+  },
 };
