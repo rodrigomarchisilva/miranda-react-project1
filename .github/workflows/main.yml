@@ -35,6 +35,10 @@ jobs:
       run: |
         npm test
 
+    - name: Run coverage
+      run: |
+        npm run coverage
+
     - name: Report coverage
       uses: actions/upload-artifact@v3
       with:
